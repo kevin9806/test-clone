@@ -6,5 +6,7 @@ const userSchema = new Schema({
     password: { type: String, required: true },
 });
 
-const User = model("user", userSchema);
+//const User = model("user", userSchema);
+//Här kollar vi istället om modellen finns, och om återanvänd den.
+const User = mongoose.models.user || model("user", userSchema);
 export default User;
