@@ -2,8 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
-
 import { createServer } from 'node:http';
+
 import { registerRouter } from './routes/registerRoute.mjs';
 import { loginRouter } from './routes/loginRoute.mjs';
 import { secretRouter } from './routes/secretRoute.mjs';

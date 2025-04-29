@@ -1,4 +1,5 @@
 import bcrypt from 'bcryptjs';
+
 import User from '../models/userSchema.mjs';
 import { convertDbUserToDto } from './registerController.mjs';
 

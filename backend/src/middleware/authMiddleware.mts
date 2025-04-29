@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
-import User from '../models/userSchema.mjs';
-
 import { Request, Response, NextFunction } from 'express';
+
+import User from '../models/userSchema.mjs';
 import { UserDto } from '../models/userDto.mjs';
 
 export const auth = async (req: Request, res: Response, next: NextFunction) => {
